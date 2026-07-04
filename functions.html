@@ -6,9 +6,25 @@
 
     </head>
     <body>
-        Hi, My name is Pujitha
-        <script src="script.js">
+        <h3 id="head">Hi, My name is Pujitha</h3>
+        <img id="tail" src=" " alt="Image"></img>
+        <script>
+            //Selecting an element
+            var head = document.getElementById("head") ;
+            //Modify an element
+            head.innerHTML = "Oyee";
+            head.style.color = "voilet";
+
+            var tail = document.getElementById("tail");
+           tail.setAttribute("alt","This is img");
             
+           //creating new element
+           var newElement = document.createElement("p");
+           document.body.appendchild(newElement);
+
+           //deleting an element
+           const elementToRemove = document.getElementById("head");
+          
         </script>
     </body>
 </html>
